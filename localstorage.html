@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>localstorage</title>
+	<style>
+		table,td,th{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		td {
+			width: 112px;
+			height: 22px;
+		}
+		.search {
+			width: 222px;
+		}
+	</style>
+</head>
+<body>
+
+	<p>
+		<label>
+			<span>姓名：</span>
+			<input id="name" type="text">
+		</label>
+	</p>
+	<p>
+
+		<label>
+			电话：
+			<input id="tel" type="text">
+		</label>
+	</p>
+	<p>
+		<label>
+			地址：
+			<input id="address" type="text">
+		</label>
+	</p>
+	<p><button id="saveBtn">保存</button></p>
+	<p>
+		<input id="sTxt" class="search" type="text" placeholder="请输入要查找的姓名关键字">
+		<button id="searchBtn">搜索</button>
+	</p>
+	<hr>
+	<table>
+		<thead>
+			<th>序号</th>
+			<th>姓名</th>
+			<th>电话</th>
+			<th>地址</th>
+			<th>操作</th>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+
+
+
+
+	<script>
+	// var num = sessionStorage.getItem('chart');
+	// if(!num) {
+	// 	num=0;
+		
+	// };
+	// num++;
+	// sessionStorage.setItem('num',num);
+	// document.write(num);
+	</script>
+	<script src="jquery/jquery-1.11.3.js"></script>
+	<script src="js/localstorage2.js"></script>
+</body>
+</html>

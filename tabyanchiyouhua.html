@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab延迟优化</title>
+	<style>
+
+		
+		* {margin: 0;padding: 0;}
+		ul,li {
+			list-style: none;
+		}
+		#tab {
+			width: 1000px;
+			background: #aaa;
+			height: 400px;
+			margin: 10px auto;
+		}
+		#tab ul {
+				overflow: hidden;
+		}
+		#tab ul li {
+			width: 80px;
+			height: 69px;
+			background: red;
+			float: left;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		#tab ul li.on {
+			background: purple;
+		}
+		.tab-body {
+			width: 450px;
+			background: #d7d7d7;
+			height: 300px;
+			overflow: hidden;
+		}
+		.tab-body>div {
+			width: 450px;
+			height: 300px;
+			font-size: 139px;
+			color: orange;
+			line-height: 300px;
+			text-align: center;
+		}
+		/*.abc {
+			position: relative;
+		}
+		.a {
+			float: left;
+			width: 220px;
+			height: 200px;
+			background: blue;
+		}
+		.c {
+			width: 100px;
+			float: right;
+			background: yellow;
+			height: 100px;
+		}
+		.b {
+			position: absolute;
+			left: 220px;
+			right: 100px;
+			height: 100px;
+			background-color: red;
+			
+		}
+		.clear {clear:both;}*/
+	</style>
+</head>
+<body>
+	<!-- <div class="abc"> -->
+	<!-- 	<div class="a">aaaa</div>
+		<div class="b">bbbb</div>
+		<div class="c">cccc</div> -->
+		<!-- <div class="clear"></div> -->
+	<!-- </div> -->
+	
+	<div id="tab">
+		<ul>
+			<li class="on">item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+		</ul>
+		<div class="tab-body">
+			<div>11111</div>
+			<div>22222</div>
+			<div>33333</div>
+			<div>44444</div>
+			<div>55555</div>
+		</div>
+	</div>
+
+
+	<script src="jquery/jquery-1.12.1.js"></script>
+	<script src="js/tabyanchiyouhua.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.btn{
+	width: 100px;
+	height: 30px;
+	background-color: red;
+    border:1px blue solid;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+   /*  border-radius: 38%; */
+    border-radius: 12px;
+}
+.btn:hover{
+	background-color: blue;
+	border: yellow 1px solid;
+	color: #000;
+	cursor: pointer;
+}
+div.box {
+	display:-moz-box;
+	display: -webkit-box;
+	display: box;
+	width: 300px;
+	border:1px solid red;
+}
+#p1 {
+	-moz-box-flex:1.0;
+	-webkit-box-flex:1.0;
+	box-flex:1.0;
+	border: 1px solid green;
+}
+#p2 {
+	-moz-box-flex:2.0;
+	-webkit-box-flex:2.0;
+	box-flex:2.0;
+	border: 1px solid green;
+}
+
+
+
+

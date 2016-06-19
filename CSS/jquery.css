@@ -1,0 +1,11 @@
+.red {
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	background-color: red;
+	color: #fff;
+	margin: 12px auto;
+	font-size:35px;
+	border-radius: 6px;
+	text-align: center;
+}

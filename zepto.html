@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zepto的简单使用</title>
+	<link rel="stylesheet" href="css/zepto.css">
+	<script src="zepto/zepto.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			$('.test').on('click',function() {
+				var $this = $(this);
+				$this.addClass('red').siblings('.red').removeClass('red');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<div class="test">
+		Test zepto red background
+	</div>
+	<span class="test">span test zepto red background</span>
+	<span class="test">span test zepto red background</span>
+	<span class="test">span test zepto red background</span>
+
+
+	
+</body>
+</html>

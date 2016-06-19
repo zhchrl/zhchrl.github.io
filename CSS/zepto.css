@@ -1,0 +1,9 @@
+.red {
+	background: red;
+}
+.test {
+	border: 1px solid green;
+	height: 30px;
+	cursor: pointer;
+	margin: 20px auto;
+}

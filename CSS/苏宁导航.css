@@ -1,0 +1,70 @@
+.nav-bar {
+	width: 35px;
+	height: 100%;
+	background-color: #383838;
+	position: fixed;
+	top: 0;
+	right: 0;	
+}
+.nav-wp {
+	position: relative;
+	width: 35px;
+	height: 200px;
+	top: 100px;
+}
+.nav-wp div {
+	position: relative;
+	/*height: 30px;
+	line-height: 39px;*/
+	margin-bottom: 10px;
+}
+.nav-wp div:hover span {
+	background-color: #ffaa01;
+	color: #000;
+}
+.icon {
+	position: relative;
+	background-color: #383838;
+	background-image: url(../IMG/sndh.png);
+	width: 35px;
+	height: 30px;
+	z-index: 3;
+	display: inline-block;
+
+}
+.icon-money {
+	background-position: -26px -84px;
+}
+.icon-money:hover {
+	background-position: 9px -84px;
+	background-color:  #ffaa01;
+}
+
+.icon-foot {
+	background-position: -26px -116px;
+}
+.icon-foot:hover {
+	background-position: 9px -116px;
+	background-color:  #ffaa01;
+}
+.icon-qd {	
+	background-position: -28px -286px;
+}
+.icon-qd:hover {	
+	background-position: 7px -286px;
+	background-color:  #ffaa01;
+}
+.nav-wp span {
+	width: 137px;
+	position: absolute;
+	/*left: -47px;*/
+	top: 0;
+	z-index: 2;
+	font-size: 12px;
+	background-color: #383838;
+	color: #ffaa01;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}

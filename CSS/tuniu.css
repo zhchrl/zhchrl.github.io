@@ -1,0 +1,128 @@
+* {margin: 0;padding: 0;}
+body {background: #f0f0f0;}
+html {
+	font-family: "Helvetica" !important;
+    font-size: 10px;
+}
+/*div.header {
+	position: relative;
+	padding-top: 16.53%;
+	width:100%;	
+	background-image: url(../img/tuniu01.png);
+	background-size: 100% 100%;
+}*/
+/*div.header a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width:100%;
+}*/
+header {
+	height: 45px;
+	width: 100%;
+	background:#43C475; 
+	display: box;
+	display: -webkit-box;
+}
+.logo img {
+	width: 25px;
+	height: 25px;
+	padding: 10px 5px 10px 10px;
+}
+.left {
+	width: 90px;
+	height: 45px;
+	display: box;
+	display: -webkit-box;
+}
+.arrow {
+	position: absolute;
+	top: 19px;
+	left: 34px;
+	width: 4px;
+	height: 4px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+
+	/*border:5px solid ;
+	border-color: #fff transparent transparent transparent;*/
+}
+.place {
+	position: relative;
+	display: box;
+	display: -webkit-box;
+	font-size: 14px;
+	color:#fff;
+}
+.place span {
+	height: 45px;
+	line-height: 45px;
+}
+.center input {
+	display: block;
+	border: none;
+	height: 30px;
+	padding-left: 10px;
+	box-flex:1;
+	-webkit-box-flex:1;
+	
+}
+.center {
+	display: box;
+	display: -webkit-box;
+	height: 30px;
+	line-height:30px;
+	margin-top: 7px;
+	border: 1px solid #f0f0f0;
+	box-flex:1;
+	-webkit-box-flex:1;
+}
+.right {
+	padding: 0 12px;
+}
+.lunbo img {
+	width: 100%;	
+	height: auto;
+}
+.list {
+	display: box;
+	display: -webkit-box;
+}
+.list div {
+	width: 33.3%;
+	padding: 0 5px;
+	box-sizing:border-box;
+
+}
+.list div img {
+	width: 100%;
+	
+}
+.nav {
+	background: #fff;
+	overflow: hidden;/*清除浮动，解决高度不存在*/
+}
+.nav a {
+	float: left;
+	/*display: block;*/
+	width: 20%;
+	text-decoration: none;
+	margin: 5px 0;
+}
+.nav a img {
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+
+}
+.nav .word {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+}

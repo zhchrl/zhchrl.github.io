@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.aside {
+	width: 104px;
+	height: 415px;
+	background: #fffccc;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	margin-top: -208px;
+	right: -104px;
+	/*position: relative;*/
+}
+.aside-small {
+	width: 43px;
+	height: 110px;
+	background-image: url(../img/pic2.png);
+	background-position: -4px 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -55px;
+	left: -43px;
+	cursor: pointer;
+}
+.aside-lg {
+	width: 104px;
+	height: 415px;
+	background-image: url(../img/pic.png);
+	position: relative;
+
+}

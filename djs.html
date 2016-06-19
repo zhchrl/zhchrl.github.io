@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<style>
+		* {margin: 0;padding: 0;}
+		.djs {
+			width: 560px;
+			height: 500px;
+			margin:20px;
+			border: 5px solid red;
+			border-radius: 20px;
+		}
+		.num {
+			width: 200px;
+			height: 38px;
+			line-height: 38px;
+			background-color: purple;
+			margin-bottom: 52px;
+			margin: auto;
+			font-size: 28px;
+			color: #000;
+			margin-top: 10px;
+			text-align: center;
+			border-radius: 12px;
+		}
+		.sec {
+			width: 360px;
+			height: 60px;
+			margin:60px auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="djs">
+		<div class="num"></div>
+		<div class="sec">
+			<input type="text" id="input">
+			<select name="" id="sel">
+				<option value="3600">小时</option>
+				<option value="60">分钟</option>
+				<option value="1">秒</option>
+			</select>
+			<button id="btn">开始倒计时</button>
+		</div>
+	</div>
+
+
+	<script src = "jquery/jquery-1.11.3.js"></script>
+	<script src = "js/function.js"></script>
+	<script src = "js/djs.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	cursor: pointer;
+}
+body {
+	background-color: #333;
+}
+ul,li {
+	list-style: none;
+}
+.accordion {
+	width: 360px;
+	background-color: #fff;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+.accordion li {
+	background-color: #666;
+}
+.accordion li:hover {
+	background-color: red;
+	cursor: pointer;
+}
+.item ul {
+	display: none;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Document</title>  
+      
+    <script>  
+    window.onload=function(){  
+        var otab=document.getElementById('tab');  
+        var oinput=otab.getElementsByTagName('input');  
+        var odiv=otab.getElementsByTagName('div');  
+        for(i=0;i<oinput.length;i++)  
+        {  
+            oinput[i].index = i; 
+            console.log('index') ;
+            oinput[i].onclick=function(){  
+                for (var j = 0; j < oinput.length; j++) {  
+                    oinput[j].className='';  
+                    odiv[j].style.display='none';  
+                };  
+                this.className='active';  
+                odiv[this.index].style.display='block';  
+            };  
+        }  
+    }  
+    </script>  
+    <style>  
+    #tab div{  
+    width: 150px;  
+    height: 100px;  
+    display: none;  
+    border: 1px solid blue;  
+    }  
+    .active{  
+        background: red;  
+    }  
+    </style>  
+</head>  
+<body>  
+    <div id="tab">  
+        <input type="button" value="aaa" class="active">  
+        <input type="button" value="bbb">  
+        <input type="button" value="ccc">  
+        <div style="display:block">aaa</div>  
+        <div>bbb</div>  
+        <div>ccc</div>  
+    </div>  
+</body>  
+</html>  
+</body>
+</html>

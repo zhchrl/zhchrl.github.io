@@ -1,0 +1,104 @@
+
+* {margin: 0;padding: 0;}
+html,body {
+	font-size: 20px;
+}
+.btn {
+	width: 155px;
+	height: 59px;
+	background: #f3f3f3;
+	cursor: pointer;
+	border-radius: 30px;
+	font-size: 19px;
+	border: 0;
+}
+.btn:hover {
+	background: green;
+	/*border: none;*/
+	outline: none;
+}
+.btn:focus {
+	outline: none;
+}
+div {
+	margin-bottom: 10px;
+}
+div.btn {
+	line-height: 59px;
+	text-align: center;
+}
+
+table.table {
+	background: purple;
+}
+.table td {
+	background: #fff;
+}
+.wp {
+	width: 1000px;
+	margin: 10px auto;
+}
+/*table.table,table.table td {
+	border: 1px solid purple;
+	border-collapse: collapse;
+}*/
+.arrow-wp {
+	border: 1px solid red;
+	width: 50px;
+	height: 50px;
+}
+.arrow {
+	width: 0;
+	height: 0;
+	border: 15px solid; 
+	border-color: transparent transparent transparent purple;
+}
+.jiantou {
+	width: 0;
+	height: 0;
+	border: 15px solid; 
+	border-color: transparent transparent transparent purple;
+	position: relative;
+}
+.jiantou div {
+	position: absolute;
+	top: -15px;
+    right: -12px;
+	height: 0;
+	border: 15px solid; 
+	border-color: transparent transparent transparent  #fff;
+}
+.masker {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.5;/*子元素全部继承*/
+	filter: alpha(opacity=50);/*css hack,兼容ie8*/
+}
+.dialog {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/*margin:-150px 0 0 -150px;*/
+	margin:-150px;
+	background-color: #fff;
+}
+.word {
+	width: 562px;	
+	border: 1px solid red;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px; 
+}
+#index li {
+	list-style: none;
+	background: red;
+	margin-top: 10px;
+	cursor: pointer;
+}

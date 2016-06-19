@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wp {
+	width: 380px;
+	/*height: 380px;*/
+	margin: 20px auto;
+}
+.wp>div {
+	height: 60px;
+	line-height: 60px;
+}
+.uploadbtn {
+	border:1px solid red;
+	padding: 5px 10px;
+	color: red;
+	cursor: pointer;
+	position: relative;
+}
+.file-upinput {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 52px;
+	height: 26px;
+	opacity: 0;
+	filter:alpha(opacity:0);
+}

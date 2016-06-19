@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script src="../nodeTest/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../nodeTest/bower_components/underscore/underscore-min.js"></script>
+	<script src="../nodeTest/bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+	name: <input type="text" ng-model="name" placeholder="world">
+	<hr>
+	Hello {{name ||'world'}}!
+</body>
+</html>

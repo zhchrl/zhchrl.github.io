@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery/jquery-1.12.1.js"></script>
+  <script src="js/city.data-3.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      var cityData, areaData;
+
+      $('#prov').on('change', function() {
+        var val = this.value;
+
+        cityData = getChildrenByVal(val, cityData3);
+
+        initList(cityData, 'city');
+        $('#area').html('<option value="0">请选择</option>');
+      });
+
+      $('#city').on('change', function() {
+
+        var val = this.value;
+
+        areaData = getChildrenByVal(val, cityData);
+        initList(areaData, 'area');
+      });
+
+      var initList = function(data, renderId) {
+
+        var optArr = ['<option value="0">请选择</option>'];
+
+        $.each(data, function(index, obj) {
+          optArr.push('<option value="', obj.value, '">', obj.text, '</option>');
+          // console.log(obj.text)
+        });
+
+        $('#' + renderId).html(optArr.join(''));
+
+        console.log(cityData3)
+      };
+
+      var getChildrenByVal = function(val, pData) {
+        var currChildren = [];
+        $.each(pData, function(index, obj) {
+          if (obj.value == val) {
+            currChildren = obj.children;
+            return false;
+          }
+        });
+        return currChildren;
+      };
+
+      initList(cityData3, 'prov');
+
+    });
+  </script>
+</head>
+<body>
+
+  <label>
+    省: 
+    <select id="prov">
+      <option value="0">请选择</option>
+    </select>
+  </label>
+
+  <label>
+    市: 
+    <select id="city">
+      <option value="0">请选择</option>
+    </select>
+  </label>
+
+  <label>
+    区/县: 
+    <select id="area">
+      <option value="0">请选择</option>
+    </select>
+  </label>
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="jquery/jquery-1.12.1.js"></script>
+  <script src="js/city.data-3.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      var currData = cityData3,
+        provData,
+        cityData;
+
+      $('#prov, #city, #dist').on('change', function() {
+        var $this = $(this),
+          map = {
+            prov: 'city',
+            city: 'dist'
+          },
+          currVal = $this.val(),
+          id = this.id;
+
+        if (id == 'prov') {
+          currData = provData = getChildrenByVal(cityData3, currVal);
+          $('#dist').html('<option value="0">请选择</option>');
+        } else if (id == 'city') {
+          currData = cityData = getChildrenByVal(provData, currVal);
+        }
+
+        renderSel(currData, map[id]);
+      });
+
+      renderSel(currData, 'prov');
+
+      function renderSel(data, selId) {
+        var opts = ['<option value="0">请选择</option>'];
+        $.each(data, function(index, obj) {
+          opts.push('<option value="', obj.value, '">', obj.text, '</option>');
+
+        });
+        $('#' + selId).html(opts.join(''));
+      }
+
+      function getChildrenByVal(data, val) {
+        var children = [];
+        $.each(data, function(index, obj) {
+          if (obj.value == val) {
+            children = obj.children;
+            return true;
+          }
+        });
+        return children;
+      }
+
+    });
+  </script>
+</head>
+<body>
+
+  <label>省：<select id="prov"><option value="0">请选择</option></select></label>
+  <label>市：<select id="city"><option value="0">请选择</option></select></label>
+  <label>区：<select id="dist"><option value="0">请选择</option></select></label>
+  
+</body>
+</html>

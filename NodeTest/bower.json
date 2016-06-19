@@ -1,0 +1,21 @@
+{
+  "name": "NodeTest",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "underscore": "^1.8.3",
+    "angular": "angularjs#1.2.29",
+    "bootstrap": "^3.3.6"
+  }
+}

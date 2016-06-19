@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table,td,th{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		td {
+			width: 112px;
+			height: 22px;
+		}
+	</style>
+</head>
+<body>
+
+	<p>
+		<label>
+			<span>姓名：</span>
+			<input id="name" type="text">
+		</label>
+	</p>
+	<p>
+
+		<label>
+			电话：
+			<input id="tel" type="text">
+		</label>
+	</p>
+	<p>
+		<label>
+			地址：
+			<input id="address" type="text">
+		</label>
+	</p>
+	<p><button id="saveBtn">保存</button></p>
+	<hr>
+	<table>
+		<thead>
+			<th>序号</th>
+			<th>姓名</th>
+			<th>电话</th>
+			<th>地址</th>
+			<th>操作</th>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+
+
+
+
+	<script>
+	// var num = sessionStorage.getItem('chart');
+	// if(!num) {
+	// 	num=0;
+		
+	// };
+	// num++;
+	// sessionStorage.setItem('num',num);
+	// document.write(num);
+	</script>
+	<script src="jquery/jquery-1.11.3.js"></script>
+	<script src="store.js-master/store.min.js"></script>
+	<script src="js/localstoragestore.js"></script>
+</body>
+</html>

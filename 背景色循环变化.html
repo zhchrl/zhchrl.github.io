@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景色循环变化</title>
+	<style>
+		div {
+			width: 380px;
+			height: 380px;
+			border-radius: 380px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="div"></div>
+
+
+
+
+	<script>
+	var div = document.getElementById('div');
+	div.onclick = fun1;
+	// var fun1 = function() {
+	// 	div.style.backgroundColor='green'
+	// }
+	function fun1() {
+		div.style.backgroundColor='green';
+		// div.onclick = fun2;
+		setTimeout(fun2,520)
+	}
+	var fun2 = function() {
+		div.style.backgroundColor='purple';
+		// div.onclick = fun3
+		setTimeout(fun3,520)
+	}
+	var fun3 = function() {
+		div.style.backgroundColor='red';
+		// div.onclick = fun1
+		setTimeout(fun1,520)
+	}
+	</script>
+	
+</body>
+</html>

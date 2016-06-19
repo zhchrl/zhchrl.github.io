@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jsajax</title>
+	
+</head>
+<body>
+	<button id="btn">ajax</button>
+	
+
+
+	<script>
+		
+		var url = 'http://localhost/upload/LXXXXX/server/ajaxUserList.php?callback=onSuccess';
+		var head = document.head;
+		var btn = document.getElementById('btn');
+		function onSuccess(response) {
+			console.log(response)  
+
+			console.log(onSuccess.arguments)
+		}
+		btn.onclick = function() {
+			var script = document.createElement('script');
+			script.src = url;
+			head.appendChild(script);
+			head.removeChild(script);
+		}
+	
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angularDemo01</title>
+	<script src="js/lib/jquery/dist/jquery.min.js"></script>
+	<script src="js/lib/underscore/underscore-min.js"></script>
+	<script src="js/lib/angular/angular.min.js"></script>
+</head>
+<body>
+	<!-- <div ng-app="">
+		name:
+		<input type="text" ng-model="name" placeholder="wder">
+		Hello {{name||'wbc2015'}}!
+
+		<div ng-init="firstName='zhangChao'" ></div>
+		<p>姓名为:<span ng-bind="firstName"></span></p>
+	</div> -->
+	
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		名:<input ng-model="firstName"><br>
+		姓:<input ng-model="lastName"><br>
+		姓名:{{firstName + " "+ lastName}}
+	</div>
+
+
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+		    $scope.firstName = "John";
+		    $scope.lastName = "Doe";
+		});
+	</script>
+</body>
+</html>

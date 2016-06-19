@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<title>angularDemo01</title>
+	<link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
+	<script src="js/lib/jquery/dist/jquery.min.js"></script>
+	<script src="js/lib/underscore/underscore-min.js"></script>
+
+	<script src="js/lib/angular/angular.min.js"></script>
+	<style>
+		* {margin: 0;padding: 0;}
+		.jsq {margin:20px auto;width: 400px;}
+	</style>
+</head>
+<body>
+	<div ng-app="" data-ng-init="num1=2;num2=5" class="jsq">
+		<div>
+			数量：<input type="number"ng-model="num1">
+			价格：<input type="number"ng-model="num2">
+		</div>	
+			<div class="btn">
+				<button type="button" class="btn btn-primary add">+</button>
+				<button type="button" class="btn btn-primary min">-</button>
+				<button type="button" class="btn btn-primary mul">*</button>
+				<button type="button" class="btn btn-primary divc">/</button>
+			</div>
+			
+		result:{{num1 + num2}}
+		
+		
+
+	</div>
+</body>
+</html>

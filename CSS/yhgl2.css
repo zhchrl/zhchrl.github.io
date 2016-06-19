@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+table ,tr,td {
+	border:1px solid purple;
+	border-collapse: collapse;
+
+	}
+ul,li {
+	list-style:none;
+}
+.toolbar ul li {
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	border: 2px solid green;
+}
+
+	.header {
+	width: 380px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 22px;
+	background-color: red;
+}
+.toolbar ul,.toolbar li {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.search {
+	float: right;
+}

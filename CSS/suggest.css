@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.search-wp {
+	width: 640px;
+	height: 35px;
+	/*line-height: 35px;*/
+	margin: 180px auto ;
+	/*text-align: center;*/
+	border: 1px solid #4791ff;
+}
+
+.search-wp input {
+	width: 540px;
+	border: none;
+	height: 100%;
+	/*padding-left: 6px;*/
+	text-indent: 15px;
+	float: left;
+}
+.search-wp button {
+	width: 100px;
+	height: 35px;
+	background-color: #4791ff;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+}
+
+.search-wp ul {
+	width: 539px;
+	border: 1px solid #ccc;
+	position: relative;
+	left: -1px;
+	text-indent: 15px;
+	display: none;
+
+
+
+
+}
+
+.search-wp li {
+	height: 25px;
+	line-height: 25px;
+}
+
+.search-wp li:hover,.search-wp li.hover {
+	background-color: #ccc;
+}

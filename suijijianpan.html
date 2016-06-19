@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随机键盘</title>
+	<style>
+		input {
+			width: 30px;
+			height: 30px;
+			border-radius: 20px;
+			margin: 2px;
+			outline: none;
+		}
+		.inp {
+			width: 130px;
+			height: 20px;
+			padding: 5px;
+		}
+		.clear,.new {
+			width: 60px;
+			font-size: 12px;
+		}
+		.div {
+			width: 120px;
+			height: 150px;
+			padding: 10px;
+			text-align: center;
+			background: rgba(180,90,30,0.3);
+			border: 2px solid orange;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="text" id="txt" class="inp"><br>
+	<input type="button" class="clear" value="清除" onclick='qc()'>
+	<input type="button" class="new" value="重置键盘" onclick='cz()'>
+	<div id="div1" class="div"></div>
+	
+
+
+
+	<script>
+	var txt = document.getElementById('txt');
+	var div1 = document.getElementById('div1');
+
+	function getRandom() {
+		var num = [0,1,2,3,4,5,6,7,8,9];
+		var rans = [];
+		for(var i=0;i<10;i++) {
+			var n = Math.floor(Math.random()*(10-i));
+			rans.push(num[n]);
+			num.splice(n,1);
+			
+		}
+		return rans
+	}
+	// alert(getRandom())
+	function creatKey() {
+		var ranArr = getRandom();
+
+		var btnArr = [];
+		for(var i=0;i<ranArr.length;i++) {
+			var btn = document.createElement('input');
+			btn.setAttribute('type','button');
+			btn.value = ranArr[i];
+			btn.onclick = onBtnClick;
+			btnArr.push[btn];
+			// console.log(div1)
+			div1.appendChild(btn);
+			
+		}
+	}
+	creatKey()
+	function onBtnClick() {
+		var val = this.value;
+		txt.value+=val;
+	}
+	var qc = function() {
+		// alert(22)
+		txt.value = ''
+	}
+	var cz =function() {
+		// alert(22)
+		window.location.reload()
+	}
+	</script>
+</body>
+</html>

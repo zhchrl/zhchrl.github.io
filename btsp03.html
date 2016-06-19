@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap003</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="qqq" >用户名</label>
+            <input id="qqq" type="text" class="form-control" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="www" class="sr-only"></label>
+            <input id="www" type="text" class="form-control" placeholder="password">
+        </div>   
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">
+                    remmber me
+            </label>
+        </div>
+        <div class="form-group">
+            <input type="file">
+        </div>
+        <button type="submint" class="btn btn-default">sign in</button>     
+    </form>
+    <form class="form-inline">
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <label for="example1" class="sr-only"></label>
+            <input type="text" id="example1" placeholder="amount" class="form-control">
+            <div class="input-group-addon">.00</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer cash</button>
+    </form>
+    <form  class="form-horizontal">
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">password</label>
+            <div class="col-sm-10">
+                <input type="password" id="password" class="form-control" placeholder="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox">remmber me</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                
+                    <input type="button" class="btn btn-default" value="sign in">
+                
+            </div>
+        </div>
+    </form>
+    <form role="form" style="width:380px">
+        <input type="text" class="form-control">
+        <input type="number" class="form-control">
+        <input type="url" class="form-control">
+        <input type="color" class="form-control">
+        <input type="submit">
+    </form>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/jquery-1.11.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
